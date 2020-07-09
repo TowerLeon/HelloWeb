@@ -1,0 +1,27 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Redirecting to new confluence cons url...</title>
+   </head>
+   <body>
+      <form name=loading>
+         <br style = "line-height:20;">
+         <p align=center>
+            <font color="#0066ff" size="7">Redirecting to new confluence cons url in <font color="#0066ff" size="7" id="counter">5</font> second(s)</font><font color="#0066ff" size="7" face="Arial">......</font>
+
+            <script>　 
+			setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                window.location.replace("http://confluence-cons-cn/");
+            }
+			}, 1000);
+			</script> 
+            　
+         </p>
+      </form>
+      <p align="center"><font size=7 color="#0066ff"> This domain will be redirected permanently to <a style="text-decoration: none" href="https://confluence-cons-cn/"><font color="#FF0000">https://confluence-cons-cn/</font></a>. Please save it as bookmark for your convenience.</font></p>
+   </body>
+</html>
