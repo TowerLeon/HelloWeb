@@ -3,44 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="jQuery/jquery-3.5.1.min.js"></script>
 </head>
 <body>
 
 <!-- <p><b>Release Type - Radio button:</b> -->
-</p>
+
 <form action="#">
     <input id="Planned Release" type="radio" name="Release Type" value="Planned Release"> Planned Release
     <input id="Special Release" type="radio" name="Release Type" value="Special Release"> Special Release
     <input id="CAB Approval Available" type="radio" name="Release Type" value="CAB Approval Available"> CAB Approval Available
 </form>
-<p></p>
+
 
 
 
 <!-- <p><b>Special Release Type - Radio button:</b> -->
-</p>
+
 <form action="#">
     <input id="Normal Change" type="radio" name="Special Release Type" value="Normal Change"> Normal Change
     <input id="Urgent Change" type="radio" name="Special Release Type" value="Urgent Change"> Urgent Change
     <input id="Emergency Change" type="radio" name="Special Release Type" value="Emergency Change"> Emergency Change
 </form>
-<p></p>
+
+<script>
+    var radios = document.getElementsByName("Special Release Type"); // list of radio buttons
+    var val = localStorage.getItem('Special Release Type'); // local storage value
+    for(var i=0;i<radios.length;i++){
+        if(radios[i].value == val){
+            radios[i].checked = true; // marking the required radio as checked
+        }
+    }
+</script>
 
 
 <!--<p><b>Ordering Party - Checkbox :</b>-->
-</p>
+
 <form action="#">
     <input type="checkbox" class="User" value="User"> User
     <input type="checkbox" class="Functional Application Owner(FAO)" value="Functional Application Owner(FAO)"> Functional Application Owner(FAO)
     <input type="checkbox" class="Business Architect" value="Business Architect"> Business Architect
     <input type="checkbox" class="IS Coordinator" value="IS Coordinator"> IS Coordinator
 </form>
-<p></p>
-
-</body>
 
 
 
+
+<!--===================================================================================-->
 <select id="edit">
     <option>1</option>
     <option>2</option>
@@ -48,15 +57,15 @@
 </select>
 
 $(function() {
-    $('#edit').change(function() {
-        localStorage.setItem('todoData', this.value);
-    });
-    if(localStorage.getItem('todoData')){
-        $('#edit').val(localStorage.getItem('todoData'));
-    }
+$('#edit').change(function() {
+localStorage.setItem('todoData', this.value);
+});
+if(localStorage.getItem('todoData')){
+$('#edit').val(localStorage.getItem('todoData'));
+}
 });
 
-
+<!--================================================================-->
 
 <select name = 'job' id = 'job'>
     <option value = 'jobselect'>Select Profession</option>
@@ -77,5 +86,33 @@ $(function() {
     });
 </script>
 
+<!--=====================================================================-->
+<h3>Seconds Display:</h3>
 
+<p id="secondsHidingText">Hiding seconds extends battery life</p>&nbsp&nbsp
+<input type="radio" name="seconds" value="show" checked="checked">Show&nbsp&nbsp
+<input type="radio" name="seconds" value="hide">Hide
+
+<script>
+$(document).ready(function(){
+    var radios = document.getElementsByName("seconds");
+    var val = localStorage.getItem('seconds');
+    for(var i=0;i<radios.length;i++){
+        if(radios[i].value == val){
+            radios[i].checked = true;
+        }
+    }
+    $('input[name="seconds"]').on('change', function(){
+        localStorage.setItem('seconds', $(this).val());
+
+    });
+});
+</script>
+
+
+
+
+
+
+</body>
 </html>
