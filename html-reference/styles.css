@@ -1,0 +1,58 @@
+/* Global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f7f7f7;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout */
+header, footer {
+    background: #ddd;
+    padding: 10px;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+}
+
+/* Form */
+input, select, textarea, button {
+    display: block;
+    margin: 8px 0;
+}
+
+/* Class & ID example */
+.highlight {
+    background-color: yellow;
+}
+
+#demoForm {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
