@@ -1,0 +1,279 @@
+<!-- Declare this document as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Root element of the page, language set to English -->
+<html lang="en">
+
+<head>
+    <!-- Character encoding: UTF-8 supports most languages -->
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title shown in browser tab -->
+    <title>HTML Reference Page</title>
+
+    <!-- Link external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Page description (used by search engines) -->
+    <meta name="description" content="HTML reference covering common elements">
+
+    <!-- Author metadata -->
+    <meta name="author" content="You">
+</head>
+
+<!-- All visible page content goes inside body -->
+<body>
+
+<!-- Header section: usually logo, title, navigation -->
+<header>
+
+    <!-- Main heading of the page -->
+    <h1>HTML Reference Page</h1>
+
+    <!-- Navigation section -->
+    <nav>
+
+        <!-- Unordered list for navigation links -->
+        <ul>
+
+            <!-- Anchor links jump to sections by id -->
+            <li><a href="#text">Text</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#form">Form</a></li>
+            <li><a href="#table">Table</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Horizontal separator -->
+<hr>
+
+<!-- Main content of the page -->
+<main>
+
+    <!-- Section demonstrating text-related HTML elements -->
+    <section id="text">
+
+        <!-- Section heading -->
+        <h2>Text Elements</h2>
+
+        <!-- Paragraph containing inline formatting elements -->
+        <p>
+            This is a
+            <!-- Strong importance (bold) -->
+            <strong>paragraph</strong>
+            with
+            <!-- Emphasis (italic) -->
+            <em>emphasis</em>,
+            <!-- Highlighted text -->
+            <mark>highlight</mark>,
+            <!-- Smaller text -->
+            <small>small text</small>,
+            <!-- Deleted text -->
+            <del>deleted</del>,
+            and
+            <!-- Inserted text -->
+            <ins>inserted</ins>
+            text.
+        </p>
+
+        <!-- Block quote for quoted content -->
+        <blockquote cite="https://example.com">
+            This is a blockquote.
+        </blockquote>
+
+        <!-- Preformatted text (keeps whitespace and line breaks) -->
+        <pre>
+function hello() {
+    console.log("preformatted text");
+}
+        </pre>
+
+        <!-- Inline code element -->
+        <code>inline_code()</code>
+
+        <!-- Expandable section -->
+        <details>
+
+            <!-- Clickable summary -->
+            <summary>Click to expand</summary>
+
+            <!-- Hidden content shown when expanded -->
+            <p>Hidden content inside details.</p>
+        </details>
+    </section>
+
+    <hr>
+
+    <!-- Section for media elements -->
+    <section id="media">
+
+        <h2>Media Elements</h2>
+
+        <!-- Image with alternative text -->
+        <img src="https://via.placeholder.com/150" alt="placeholder image">
+
+        <!-- Audio player -->
+        <audio controls>
+
+            <!-- Audio source file -->
+            <source src="sample.mp3" type="audio/mpeg">
+
+            <!-- Fallback text -->
+            Your browser does not support audio.
+        </audio>
+
+        <!-- Video player -->
+        <video width="320" controls>
+
+            <!-- Video source file -->
+            <source src="sample.mp4" type="video/mp4">
+
+            <!-- Fallback text -->
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <hr>
+
+    <!-- Section demonstrating list elements -->
+    <section id="list">
+
+        <h2>Lists</h2>
+
+        <!-- Unordered list -->
+        <ul>
+            <li>Unordered</li>
+            <li>List</li>
+        </ul>
+
+        <!-- Ordered list -->
+        <ol>
+            <li>Ordered</li>
+            <li>List</li>
+        </ol>
+
+        <!-- Description list -->
+        <dl>
+
+            <!-- Term -->
+            <dt>HTML</dt>
+
+            <!-- Definition -->
+            <dd>Markup language</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <!-- Section demonstrating tables -->
+    <section id="table">
+
+        <h2>Table</h2>
+
+        <!-- Table container -->
+        <table>
+
+            <!-- Table header -->
+            <thead>
+            <tr>
+                <!-- Column headers -->
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            </thead>
+
+            <!-- Table body -->
+            <tbody>
+            <tr>
+                <!-- Table data cells -->
+                <td>Alice</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>30</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Section demonstrating form elements -->
+    <section id="form">
+
+        <h2>Form Elements</h2>
+
+        <!-- Form container -->
+        <form id="demoForm">
+
+            <!-- Label wraps input for accessibility -->
+            <label>
+                Text:
+                <input type="text" name="text">
+            </label>
+
+            <label>
+                Email:
+                <input type="email" name="email">
+            </label>
+
+            <label>
+                Password:
+                <input type="password">
+            </label>
+
+            <label>
+                Number:
+                <input type="number">
+            </label>
+
+            <label>
+                Date:
+                <input type="date">
+            </label>
+
+            <label>
+                Checkbox:
+                <input type="checkbox">
+            </label>
+
+            <label>
+                Radio:
+                <input type="radio" name="r">
+            </label>
+
+            <!-- Dropdown selection -->
+            <select>
+                <option>Option 1</option>
+                <option>Option 2</option>
+            </select>
+
+            <!-- Multi-line text input -->
+            <textarea rows="3"></textarea>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+</main>
+
+<hr>
+
+<!-- Footer section -->
+<footer>
+
+    <!-- Copyright symbol and text -->
+    <p>&copy; 2026 HTML Reference</p>
+</footer>
+
+<!-- External JavaScript file loaded at the end for better performance -->
+<script src="script.js"></script>
+
+</body>
+</html>
