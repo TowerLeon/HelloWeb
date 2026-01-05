@@ -145,6 +145,16 @@ async function asyncDemo() {
 
 asyncDemo().then(console.log);
 
+
+// // Equivalent code using Promises without async/await
+// function asyncDemo2() {
+//     return sleep(100).then(() => 'async result');
+// }
+
+// asyncDemo2().then(console.log);
+
+
+
 /* =========================
  * 9. FILE SYSTEM
  * ========================= */
