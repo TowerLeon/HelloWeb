@@ -1,0 +1,8 @@
+id,function,category,description,use_case,example
+1,Promise.resolve,Promise,Resolve promise,Normalize async,Promise.resolve(1)
+2,Promise.reject,Promise,Reject promise,Error flow,Promise.reject(err)
+3,Promise.all,Promise,Wait all,Parallel,Promise.all(ps)
+4,Promise.allSettled,Promise,Wait all results,Partial success,Promise.allSettled(ps)
+5,Promise.race,Promise,First settled,Timeouts,Promise.race(ps)
+6,async function,Async,Async declaration,Readable async,async ()=>{}
+7,await,Async,Await promise,Linear async,await fetch(url)

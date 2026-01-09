@@ -26,4 +26,6 @@ async function main2(){
 main2();
 
 //problem 3
-const retry = (fn, times) => {return new Promise(resolve) }
+const retry = (fn, times) => {return new Promise(resolve){
+    
+} }

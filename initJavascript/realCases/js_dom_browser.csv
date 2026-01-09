@@ -1,0 +1,10 @@
+id,function,category,description,use_case,example
+1,document.querySelector,DOM,Select element,DOM access,document.querySelector('#id')
+2,document.querySelectorAll,DOM,Select elements,Batch ops,document.querySelectorAll('div')
+3,element.addEventListener,DOM,Attach event,UI interaction,"el.addEventListener('click',fn)"
+4,event.preventDefault,DOM,Prevent default,Forms,e.preventDefault()
+5,fetch,Browser,HTTP request,API calls,fetch(url)
+6,localStorage.getItem,Storage,Read storage,Persistence,localStorage.getItem('k')
+7,localStorage.setItem,Storage,Write storage,Persistence,"localStorage.setItem('k','v')"
+8,setTimeout,Timer,Delay execution,Scheduling,"setTimeout(fn,1000)"
+9,clearTimeout,Timer,Cancel timeout,Cleanup,clearTimeout(id)
