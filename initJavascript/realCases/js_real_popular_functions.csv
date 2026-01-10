@@ -1,0 +1,49 @@
+id,function,category,description,use_case,example
+1,Array.prototype.map,Array,Transform array elements,Data transformation,arr.map(x => x * 2)
+2,Array.prototype.filter,Array,Filter elements by condition,Remove invalid items,arr.filter(x => x > 0)
+3,Array.prototype.reduce,Array,Reduce array to single value,Sum / group data,"arr.reduce((a,b)=>a+b,0)"
+4,Array.prototype.forEach,Array,Iterate over array,Side effects,arr.forEach(console.log)
+5,Array.prototype.find,Array,Find first match,Lookup by condition,arr.find(x=>x.id===1)
+6,Array.prototype.some,Array,Check if any match,Validation,arr.some(x=>x>10)
+7,Array.prototype.every,Array,Check if all match,Permission checks,arr.every(Boolean)
+8,Array.prototype.includes,Array,Check existence,Membership check,arr.includes(3)
+9,Array.prototype.sort,Array,Sort array,Ordering,"arr.sort((a,b)=>a-b)"
+10,Array.prototype.slice,Array,Copy array portion,Immutability,"arr.slice(1,3)"
+11,Array.prototype.splice,Array,Modify array,Insert/remove items,"arr.splice(1,1)"
+12,Object.keys,Object,Get object keys,Dynamic iteration,Object.keys(obj)
+13,Object.values,Object,Get object values,Value processing,Object.values(obj)
+14,Object.entries,Object,Get key-value pairs,Mapping,Object.entries(obj)
+15,Object.assign,Object,Shallow merge objects,Config merge,"Object.assign(a,b)"
+16,Object.freeze,Object,Freeze object,Immutability,Object.freeze(obj)
+17,Object.seal,Object,Prevent property removal,Controlled mutation,Object.seal(obj)
+18,Object.hasOwn,Object,Check own property,Safe access,"Object.hasOwn(obj,'x')"
+19,String.prototype.includes,String,Check substring,Search,'abc'.includes('a')
+20,String.prototype.split,String,Split string,Parsing,"'a,b'.split(',')"
+21,String.prototype.replace,String,Replace text,Sanitization,"'a'.replace('a','b')"
+22,String.prototype.trim,String,Trim whitespace,Input cleanup,' a '.trim()
+23,String.prototype.toLowerCase,String,Lowercase string,Case-insensitive compare,'A'.toLowerCase()
+24,String.prototype.startsWith,String,Check prefix,Validation,'abc'.startsWith('a')
+25,String.prototype.endsWith,String,Check suffix,File checks,'a.js'.endsWith('.js')
+26,Math.random,Math/Number,Generate random number,Sampling,Math.random()
+27,Math.max,Math/Number,Get max value,Range checks,"Math.max(1,2)"
+28,Math.min,Math/Number,Get min value,Range checks,"Math.min(1,2)"
+29,Math.round,Math/Number,Round number,UI display,Math.round(1.4)
+30,Math.floor,Math/Number,Floor number,Indexing,Math.floor(1.9)
+31,Number.isNaN,Math/Number,Check NaN safely,Validation,Number.isNaN(x)
+32,parseInt,Math/Number,Parse integer,Convert strings,"parseInt('10',10)"
+33,parseFloat,Math/Number,Parse float,Convert strings,parseFloat('1.2')
+34,Promise.resolve,Promise/Async,Resolve promise,Normalize async,Promise.resolve(1)
+35,Promise.reject,Promise/Async,Reject promise,Error flow,Promise.reject(err)
+36,Promise.all,Promise/Async,Wait all promises,Parallel execution,Promise.all(ps)
+37,Promise.allSettled,Promise/Async,Wait all results,Partial success,Promise.allSettled(ps)
+38,Promise.race,Promise/Async,First settled promise,Timeouts,Promise.race(ps)
+39,async/await,Promise/Async,Async syntax,Readable async code,await fetch(url)
+40,document.querySelector,Browser/DOM,Select DOM element,DOM access,document.querySelector('#id')
+41,document.querySelectorAll,Browser/DOM,Select multiple elements,Batch ops,document.querySelectorAll('div')
+42,element.addEventListener,Browser/DOM,Attach event,UI interaction,"el.addEventListener('click',fn)"
+43,event.preventDefault,Browser/DOM,Prevent default action,Form handling,e.preventDefault()
+44,fetch,Browser/DOM,HTTP requests,API calls,fetch(url)
+45,localStorage.getItem,Browser/DOM,Read storage,Persistence,localStorage.getItem('k')
+46,localStorage.setItem,Browser/DOM,Write storage,Persistence,"localStorage.setItem('k','v')"
+47,setTimeout,Browser/DOM,Delay execution,Scheduling,"setTimeout(fn,1000)"
+48,clearTimeout,Browser/DOM,Cancel timeout,Cleanup,clearTimeout(id)

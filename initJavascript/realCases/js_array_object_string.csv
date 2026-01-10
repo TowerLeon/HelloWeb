@@ -1,0 +1,15 @@
+id,function,category,description,use_case,example
+1,Array.prototype.map,Array,Transform array,Data mapping,arr.map(x=>x*2)
+2,Array.prototype.filter,Array,Filter array,Validation,arr.filter(Boolean)
+3,Array.prototype.reduce,Array,Reduce array,Aggregation,"arr.reduce((a,b)=>a+b,0)"
+4,Array.prototype.find,Array,Find element,Lookup,arr.find(x=>x.id===1)
+5,Array.prototype.includes,Array,Check existence,Membership,arr.includes(1)
+6,Object.keys,Object,Get keys,Iteration,Object.keys(obj)
+7,Object.values,Object,Get values,Processing,Object.values(obj)
+8,Object.entries,Object,Key-value pairs,Mapping,Object.entries(obj)
+9,Object.assign,Object,Merge objects,Config merge,"Object.assign(a,b)"
+10,String.prototype.includes,String,Substring check,Search,'abc'.includes('a')
+11,String.prototype.split,String,Split string,Parsing,"'a,b'.split(',')"
+12,String.prototype.replace,String,Replace text,Sanitize,"'a'.replace('a','b')"
+13,String.prototype.trim,String,Trim whitespace,Cleanup,' a '.trim()
+14,String.prototype.toLowerCase,String,Lowercase,Compare,'A'.toLowerCase()
